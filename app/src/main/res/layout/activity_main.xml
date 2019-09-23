@@ -2,36 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnIncident"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Incident"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="305dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAccident"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:text="Accident"
+        app:layout_constraintStart_toStartOf="@+id/btnIncident"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncident" />
+
+
+    <Button
+        android:id="@+id/btnAmbulance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambulance"
+        app:layout_constraintStart_toStartOf="@+id/btnAccident"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccident" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
