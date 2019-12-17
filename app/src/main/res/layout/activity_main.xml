@@ -5,6 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF455C"
     tools:context=".MainActivity">
 
     <TableLayout
@@ -15,7 +16,7 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.2"/>
+            android:layout_weight="0.2" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -24,10 +25,13 @@
 
             <Button
                 android:id="@+id/btnIncident"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/incident" />
+                android:background="#FF3050"
+                android:text="@string/incident"
+                android:textSize="32dp" />
         </TableRow>
 
         <TableRow
@@ -37,10 +41,13 @@
 
             <Button
                 android:id="@+id/btnAccident"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/accident" />
+                android:background="#FF3050"
+                android:text="@string/accident"
+                android:textSize="32dp" />
         </TableRow>
 
         <TableRow
@@ -50,16 +57,19 @@
 
             <Button
                 android:id="@+id/btnAmbulance"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/ambulance" />
+                android:background="#FF3050"
+                android:text="@string/ambulance"
+                android:textSize="32dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.2"/>
+            android:layout_weight="0.2" />
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
