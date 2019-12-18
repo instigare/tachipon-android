@@ -10,8 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ThanksActivity"></activity>
-        <activity android:name=".FinaliseActivity" />
-        <activity android:name=".DetailsActivity" />
+        <activity android:name=".FinaliseActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".DetailsActivity"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
@@ -21,7 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"/>
     </application>
 
 </manifest>

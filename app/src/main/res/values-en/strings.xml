@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">tachipon</string>
     <string name="incident">Incident</string>
     <string name="accident">Accident</string>
     <string name="ambulance">Ambulance</string>
+    <string name="goback">Return</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit_details">Submit</string>
+    <string name="attach_image">Image</string>
+    <string name="enter_details">Please tell us your current situation in as much details as time allows</string>
+    <string name="check">Confirmation</string>
+    <string name="details">Details</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="home">Return Home</string>
 </resources>

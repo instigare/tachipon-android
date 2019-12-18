@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">たちぽん</string>
+    <string name="incident">事件</string>
+    <string name="accident">事故</string>
+    <string name="ambulance">救急車</string>
+    <string name="goback">戻る</string>
+    <string name="confirm">確認</string>
+    <string name="submit_details">送信</string>
+    <string name="attach_image">画像</string>
+    <string name="enter_details">現状況をできるだけ具体的に教えて下さい</string>
+    <string name="check">最終確認</string>
+    <string name="details">詳細</string>
+    <string name="name">名前</string>
+    <string name="phone">電話番号</string>
+    <string name="home">ホーム画面へ戻る</string>
+</resources>

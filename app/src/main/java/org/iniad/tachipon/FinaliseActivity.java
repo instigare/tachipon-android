@@ -25,10 +25,19 @@ public class FinaliseActivity extends AppCompatActivity {
         String situation = bundle.getString("situation");
         String details = bundle.getString("details");
 
-        TextView textSituationFinal = findViewById(R.id.textSituationFinal);
-        TextView textDetailsFinal = findViewById(R.id.textDetailsFinal);
+        switch (situation) {
+            case "incident":
+                setTitle(getResources().getString(R.string.incident) + ": " + getResources().getString(R.string.check));
+                break;
+            case "accident":
+                setTitle(getResources().getString(R.string.accident) + ": " + getResources().getString(R.string.check));
+                break;
+            case "ambulance":
+                setTitle(getResources().getString(R.string.ambulance) + ": " + getResources().getString(R.string.check));
+                break;
+        }
 
-        textSituationFinal.setText(situation);
+        TextView textDetailsFinal = findViewById(R.id.textDetailsFinal);
         textDetailsFinal.setText(details);
 
         Button btnConfirm = findViewById(R.id.btnConfirm);

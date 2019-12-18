@@ -29,9 +29,17 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         
         imageView = findViewById(R.id.imageView);
 
-
-        TextView textSituation = findViewById(R.id.textSituation);
-        textSituation.setText(situation);
+        switch (situation) {
+            case "incident":
+                setTitle(getResources().getString(R.string.incident) + ": " + getResources().getString(R.string.details));
+                break;
+            case "accident":
+                setTitle(getResources().getString(R.string.accident) + ": " + getResources().getString(R.string.details));
+                break;
+            case "ambulance":
+                setTitle(getResources().getString(R.string.ambulance) + ": " + getResources().getString(R.string.details));
+                break;
+        }
 
         final EditText editDetails = findViewById(R.id.editDetails);
 
