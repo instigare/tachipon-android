@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.iniad.tachipon">
 
     <application
@@ -25,6 +26,9 @@
         </activity>
         <activity
             android:name=".MainActivity"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"
+            tools:ignore="WrongManifestParent" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 </manifest>

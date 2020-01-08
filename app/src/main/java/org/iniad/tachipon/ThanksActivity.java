@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ThanksActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -13,6 +14,11 @@ public class ThanksActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thanks);
+
+        Bundle bundle = getIntent().getExtras();
+
+        TextView textView = findViewById(R.id.textUrl);
+        textView.setText(bundle.getString("imageUrl"));
 
         Button btnHome = findViewById(R.id.btnHome);
         btnHome.setOnClickListener(this);
